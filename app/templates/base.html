@@ -46,13 +46,13 @@
     </div>
 
     <div class="container">
-
+      {% block content %}
       <h1>Under Construction</h1>
       <p>
         We are really glad you came here but unfortunatly we are not ready yet.<br>
         Please visit us in few days.
       </p>
-
+      {% endblock content %}
     </div> <!-- /container -->
 
     <!-- javascript
@@ -71,6 +71,7 @@
     <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js"></script>
     <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-carousel.js"></script>
     <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-typeahead.js"></script>
-
+    {% block footer %}
+    {% endblock footer %}
   </body>
 </html>
